@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 15vh 10vh 50vh 25vh;
+    grid-template-areas: "head head head head" "nav nav nav nav" "img1 img1 img1 img1"  "img3 img3 img3 img3";
+    }
+
+.head {
+    grid-area: head;
+    background-color: bisque;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+nav {
+    grid-area: nav;
+    background-color: blanchedalmond;
+}
+
+.img1 {
+    grid-area: img1;
+    background-color: burlywood;
+}
+
+
+footer {
+    grid-area: img3;
+    background-color: lavenderblush;
+    text-align: center;
+}

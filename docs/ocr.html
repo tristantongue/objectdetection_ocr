@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
+    <title>ocr image</title>
     <link rel="stylesheet" href="../style.css">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,30 +16,39 @@
             <hr>
         </div>
         <nav>
-            {% for page in pages %}
-                <a class="active" href="{{ page.output_filename }}">{{ page.title }}</a>
-            {% endfor %}
+            
+                <a class="active" href="family.html">family image</a>
+            
+                <a class="active" href="ocr.html">ocr image</a>
+            
+                <a class="active" href="bbcnews.html">bbcnews image</a>
+            
         </nav>
         <div class="img1">
-            <img src="{{ image_source }}" >
+            <img src="images/ocr.jpg" >
         </div>
-            {% for location in face_locations %}
-                <div class="img1-overlay" style="
-                        position: relative;
-                        border: 5px solid red;
-                        opacity: 0.5;
-                        top: calc(({{ location[0] }} / {{ image_height }})*100%) ;
-                        left: calc(({{ location[3] }} / {{ image_width }})*100%) ;
-                        width: 20px;
-                        height: 20px;
-                    ">
-
-                </div>
-            {% endfor %}
+            
         
         <div class="maintext">
             <p>If there is any text in the image, then it will be here:</p>
-            {{ detected_text }}
+            how does ocr work xX Q
+
+Q All ©) Videos [J Images 2 Shopping MH) News’ : More Settings Tools
+
+ 
+
+About 37,700,000 results (0.96 seconds)
+
+Optical Character Recognition, or OCR, is a technology that enables you to convert
+different types of documents, such as scanned paper documents, PDF files or images
+captured by a digital camera into editable and searchable data.
+
+pdf.abbyy.com >» Learning center
+
+OCR - Optical Character Recognition explained | ABBYY
+
+@ About Featured Snippets @ Feedback
+
             <br>
             <p>Results aren't always 100% accurate, as the program uses open source Python packages to "look" at each image, and it's bound to make mistakes. For facial recognition, the program locates the  "coordinates" of each face, and uses simple CSS styling to draw a box.</p>
         </div>
@@ -56,7 +65,6 @@
                     <a href="#" class="fa fa-soundcloud"></a>
                 </li>
             </ul>
-            Tristan Tongue 2020
       </footer>
         
     </div>

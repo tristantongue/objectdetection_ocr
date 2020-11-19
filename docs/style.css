@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+
+.container {
+    display: grid;
+    height: 700px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 400px 100px;
+    grid-template-areas: "head head head head" "nav nav nav nav" "img1 img1 text1 text1"  "img3 img3 img3 img3";
+    font-family: 'Work Sans', sans-serif;
+    }
+
+.head {
+    grid-area: head;
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+nav {
+    grid-area: nav;
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+a   {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: black;
+    padding: 3px 3px;
+    border-radius: 2px;
+}
+
+a:hover {
+    background-color: #555;
+    cursor: pointer;
+  }
+
+  a:active {
+    background-color: blue;
+  }
+  
+
+.img1 {
+    grid-area: img1;
+    background-color: whitesmoke;
+    height: auto;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img1-overlay {
+    grid-area: img1;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.maintext {
+    grid-area: text1;
+    padding: 10px;
+    background-color: whitesmoke;
+
+}
+
+.face {
+    position: absolute;
+    border: 5px solid blue;
+    top: "{{ location[0]}}"px;
+    left: "{{ location[3] }}"px;
+    width: 10px;
+    height: 10px;
+    grid-area: img1;
+
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px 30px ;
+    background-color: whitesmoke;
+    grid-area: img3;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  ul > li {
+    display: inline-block;
+    /* You can also add some margins here to make it look prettier */
+    zoom:1;
+    *display:inline;
+    /* this fix is needed for IE7- */
+}
+
+

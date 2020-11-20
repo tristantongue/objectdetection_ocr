@@ -10,6 +10,8 @@
     grid-template-rows: 100px 100px 400px 100px;
     grid-template-areas: "head head head head" "nav nav nav nav" "img1 img1 text1 text1"  "img3 img3 img3 img3";
     font-family: 'Work Sans', sans-serif;
+    max-width: 1000px;
+
     }
 
 .head {

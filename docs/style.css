@@ -14,6 +14,16 @@
 
     }
 
+@media only screen and (max-width: 550px) {
+    .container{
+        display: grid;
+        height: 1000px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 100px 400px 300px 100px;
+        grid-template-areas: "head" "nav" "img1" "text1" "img3";
+        font-family: 'Work Sans', sans-serif;
+    }}
+
 .head {
     grid-area: head;
     background-color: whitesmoke;
